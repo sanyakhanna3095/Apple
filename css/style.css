@@ -40,15 +40,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.search-cart img{
-  margin-right: 1.5rem;
-}
-
 .search-btn{
   border-radius: 100px;
   background: #FFFFFF45;
   padding: 0.5rem;
+  display: none;
 }
 
 .btn-placeholder{
@@ -214,6 +210,9 @@ input::placeholder{
     background: #EFF6FB;
     color: #000;
     display:flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
 }
 
 #mobile-navbar {
@@ -226,11 +225,22 @@ input::placeholder{
   transition: left 0.3s ease; /* Animation for sliding */
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   z-index: 900; /* Ensure it appears above other content */
+  align-content: center;
 }
 
+#mobile-navbar ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+}
 
+#mobile-navbar li{
+  margin-bottom: 4rem;
+}
 
 #mobile-navbar.active {
     left: 0; /* Slide in */
@@ -277,6 +287,12 @@ input::placeholder{
 }
 
 @media (min-width: 1240px) {
+  .search-cart img{
+  margin-right: 1.5rem;
+}
+.search-btn{
+  display: block;
+}
   .container {
     height: 100vh;
     margin-left: 5rem; /* Space for the footer on the left */
@@ -324,6 +340,6 @@ input::placeholder{
     display: flex;
   }
   #mobile-navbar {
-    display: none; /* Hide mobile navbar on desktop */
+    display:none; /* Hide mobile navbar on desktop */
   }
 }
