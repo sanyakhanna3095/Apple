@@ -32,6 +32,34 @@ body {
   padding: 1rem;
   align-items: center;
   margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.search-cart{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-cart img{
+  margin-right: 1.5rem;
+}
+
+.search-btn{
+  border-radius: 100px;
+  background: #FFFFFF45;
+  padding: 0.5rem;
+}
+
+.btn-placeholder{
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input::placeholder{
+  color: #fff;
 }
 
 .icon {
@@ -39,7 +67,7 @@ body {
   height: 50px;
 }
 .icon--small {
-  width: 3rem;
+  width: 2rem;
   height: 2rem;
 }
 
@@ -71,7 +99,7 @@ body {
   font-weight: 500;
   margin: 1rem 0;
   outline: 0;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
   text-align: center;
   white-space: nowrap;
   line-height: 1.3;
@@ -105,23 +133,28 @@ body {
 
 .options {
   justify-items: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .watches__color {
   list-style: none;
+  padding-left: 7rem;
 }
 
 .watches__color li {
   display: inline-block;
-  margin: 5px;
+  margin: 8px;
 }
 
 .options img {
-  width: 3rem;
-  margin: -1rem 0 0 0.5rem;
+  width: 4rem;
+  margin: -1rem 0 0 1rem;
 }
 
+.box{
+  border-radius: 5px;
+  width: 6rem;
+}
 .color1 {
   background: linear-gradient(to left, rgba(67, 69, 88), rgba(67, 69, 88, 0.6));
 }
@@ -257,10 +290,10 @@ body {
     margin-left: 1rem;
   }
   .grid {
-    margin-left: 43rem;
+    margin-left: 45rem;
   }
   .watch {
-    width: 25rem;
+    width: 30rem;
     height: 30rem;
   }
   .color__indicator {
