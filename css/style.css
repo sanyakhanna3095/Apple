@@ -23,7 +23,7 @@ body {
   height: 95vh;
   border-radius: 2rem;
   display: block;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .nav-menu {
@@ -37,25 +37,31 @@ body {
 
 .search-cart{
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.image{
+  margin-left: 1rem;
 }
 .search-btn{
   border-radius: 100px;
   background: #FFFFFF45;
   padding: 0.5rem;
-  display: none;
+  display: flex;
+  cursor: pointer;
 }
 
 .btn-placeholder{
   background: transparent;
   border: 0;
-  font-size: 14px;
+  /* font-size: 1rem; */
   font-weight: 400;
+  outline:none;
 }
 
 input::placeholder{
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .icon {
@@ -192,12 +198,19 @@ input::placeholder{
   justify-content: center;
   z-index: 1000;
   margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
+
 .footer-navbar .menu-icon {
-  justify-items: center;
+  justify-content: center;
   z-index: 1000;
   margin-left: 2rem;
+  display: flex;
+}
+
+.footer-navbar .menu-icon img{
+  width: 2rem;
 }
 
 .footer-navbar a {
@@ -208,11 +221,14 @@ input::placeholder{
 
 #mobile-navbar .badge{
     background: #EFF6FB;
-    color: #000;
     display:flex;
     width: 100%;
     justify-content: center;
     padding: 2rem;
+}
+
+#mobile-navbar .badge a{
+  color: #000;
 }
 
 #mobile-navbar {
@@ -236,6 +252,11 @@ input::placeholder{
   flex-direction: column;
   align-items: center;
   margin-bottom: 15rem;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+
 }
 
 #mobile-navbar li{
@@ -281,6 +302,12 @@ input::placeholder{
     cursor: pointer;
   }
 
+  .search-btn .btn-placeholder{
+    display: none;
+  }
+  .search-btn{
+    background: none;
+  }
   #mobile-navbar {
     display: none; /* Hide mobile navbar by default */
   }
@@ -290,19 +317,23 @@ input::placeholder{
   .search-cart img{
   margin-right: 1.5rem;
 }
-.search-btn{
-  display: block;
+
+.image{
+  margin-left: .2rem;
 }
   .container {
     height: 100vh;
     margin-left: 5rem; /* Space for the footer on the left */
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
   }
   .block {
     position: absolute;
     font-size: 2rem;
-    /* padding: 1.5rem; */
-    margin-top: 5.5rem;
+    padding: 1.5rem;
+    margin-top: 11rem;
     margin-left: 1rem;
   }
   .grid {
@@ -339,7 +370,7 @@ input::placeholder{
   #desktop-footer {
     display: flex;
   }
-  #mobile-navbar {
+  #mobile-navbar ul {
     display:none; /* Hide mobile navbar on desktop */
   }
 }
