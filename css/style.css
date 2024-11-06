@@ -35,31 +35,31 @@ body {
   margin-right: 1rem;
 }
 
-.search-cart{
+.search-cart {
   display: inline-flex;
   align-items: center;
 }
 
-.image{
+.image {
   margin-left: 1rem;
 }
-.search-btn{
+.search-btn {
   border-radius: 100px;
-  background: #FFFFFF45;
+  background: #ffffff45;
   padding: 0.5rem;
   display: flex;
   cursor: pointer;
 }
 
-.btn-placeholder{
+.btn-placeholder {
   background: transparent;
   border: 0;
   /* font-size: 1rem; */
   font-weight: 400;
-  outline:none;
+  outline: none;
 }
 
-input::placeholder{
+input::placeholder {
   color: #fff;
   font-size: 1.2rem;
 }
@@ -153,7 +153,7 @@ input::placeholder{
   margin: -1rem 0 0 1rem;
 }
 
-.box{
+.box {
   border-radius: 5px;
   width: 6rem;
 }
@@ -176,6 +176,32 @@ input::placeholder{
     rgba(249, 205, 196, 0.6)
   );
 }
+
+.page-num {
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.page-num p {
+  margin: 1rem;
+}
+.page-num img {
+  width: 2rem;
+}
+
+/* .page-num::before{
+  content: url(../images/icons8-arrow-50-2.png);
+  margin-right: 1rem;
+}
+
+.page-num::after{
+  content: url(../images/icons8-arrow-50.png);
+  margin-left: 1rem;
+} */
 
 .footer-navbar {
   background: #fff;
@@ -201,7 +227,6 @@ input::placeholder{
   font-size: 1.5rem;
 }
 
-
 .footer-navbar .menu-icon {
   justify-content: center;
   z-index: 1000;
@@ -209,7 +234,7 @@ input::placeholder{
   display: flex;
 }
 
-.footer-navbar .menu-icon img{
+.footer-navbar .menu-icon img {
   width: 2rem;
 }
 
@@ -219,15 +244,15 @@ input::placeholder{
   text-decoration: none;
 }
 
-#mobile-navbar .badge{
-    background: #EFF6FB;
-    display:flex;
-    width: 100%;
-    justify-content: center;
-    padding: 2rem;
+#mobile-navbar .badge {
+  background: #eff6fb;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
 }
 
-#mobile-navbar .badge a{
+#mobile-navbar .badge a {
   color: #000;
 }
 
@@ -246,7 +271,7 @@ input::placeholder{
   align-content: center;
 }
 
-#mobile-navbar ul{
+#mobile-navbar ul {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -256,40 +281,40 @@ input::placeholder{
   font-weight: 500;
   line-height: 27px;
   text-align: left;
-
 }
 
-#mobile-navbar li{
+#mobile-navbar li {
   margin-bottom: 4rem;
 }
 
 #mobile-navbar.active {
-    left: 0; /* Slide in */
+  left: 0; /* Slide in */
 }
 
-#desktop-footer ul{
-    margin-top: 2rem;
-    display: flex;
-    font-size: 1.4rem;
+#desktop-footer ul {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.4rem;
 }
 
-#desktop-footer li, a{
-    color: #fff;
-    text-decoration: none;
-    list-style: none;
-    margin-right: 1.5rem;
+#desktop-footer li,
+a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 1.5rem;
 }
 
-#desktop-footer .badge-sec a{
-    color: #B6CCDA;
-    background: #fff;
-    display:flex;
-    padding: 0 1rem;
-    border-radius: 2rem;
+#desktop-footer .badge-sec a {
+  color: #b6ccda;
+  background: #fff;
+  display: flex;
+  padding: 0 1rem;
+  border-radius: 2rem;
 }
 
 /* Responsive Styles */
-@media (max-width: 1239px) {
+@media screen and (max-width: 1239px) {
   .options {
     display: none;
   }
@@ -302,25 +327,29 @@ input::placeholder{
     cursor: pointer;
   }
 
-  .search-btn .btn-placeholder{
+  .search-btn .btn-placeholder {
     display: none;
   }
-  .search-btn{
+  .search-btn {
     background: none;
   }
   #mobile-navbar {
     display: none; /* Hide mobile navbar by default */
   }
+
+  .page-num {
+    display: none;
+  }
 }
 
-@media (min-width: 1240px) {
-  .search-cart img{
-  margin-right: 1.5rem;
-}
+@media screen and (min-width: 1240px) {
+  .search-cart img {
+    margin-right: 1.5rem;
+  }
 
-.image{
-  margin-left: .2rem;
-}
+  .image {
+    margin-left: 0.2rem;
+  }
   .container {
     height: 100vh;
     margin-left: 5rem; /* Space for the footer on the left */
@@ -371,6 +400,6 @@ input::placeholder{
     display: flex;
   }
   #mobile-navbar ul {
-    display:none; /* Hide mobile navbar on desktop */
+    display: none; /* Hide mobile navbar on desktop */
   }
 }
